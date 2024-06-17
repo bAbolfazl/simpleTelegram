@@ -14,3 +14,35 @@ body {
 li.active a {
   color: white;
 }
+
+.message {
+  width: 300px;
+  margin: 5px;
+  position: relative;
+}
+.messageCurve {
+  position: absolute;
+  inset: 0;
+  padding: 0px;
+  background: #303030;
+  border-radius: 6px;
+}
+
+.messageCurve:after {
+  content: "";
+  top: 1px;
+  right: -29px;
+  position: absolute;
+  border: 0px solid;
+  display: block;
+  width: 38px;
+  height: 26px;
+  background-color: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: -21px 9px 0px 8px #303030;
+}
+.messageCurve--opposite:after {
+  left: -29px;
+  transform: scale(-1, 1);
+}
