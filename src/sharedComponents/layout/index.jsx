@@ -9,7 +9,9 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      <div className="min-h-dvh">
+        <Outlet />
+      </div>
       <Navigation />
     </>
   );

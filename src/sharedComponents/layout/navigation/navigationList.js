@@ -5,7 +5,7 @@ const NavigationList = [
     id: "settings",
     icon: "settings.svg",
   },
-  { route: "/", label: "Chats", id: "chats", icon: "chat.svg" },
+  { route: "/chats", label: "Chats", id: "chats", icon: "chat.svg" },
   { route: "/calls", label: "Calls", id: "calls", icon: "calls.svg" },
   {
     route: "/contacts",

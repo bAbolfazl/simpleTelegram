@@ -18,12 +18,16 @@ const router = createBrowserRouter([
         element: <Layout />,
         children: [
           {
-            path: "/",
+            path: "/chats",
             element: <Home />,
           },
           {
             path: "/settings",
             element: <Settings />,
+          },
+          {
+            path: "*",
+            element: <div>404 page</div>,
           },
         ],
       },
